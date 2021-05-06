@@ -1,5 +1,6 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 from flask import jsonify
+from flask_session import Session
 import datetime
 from Utils import Users
 import model
@@ -10,6 +11,9 @@ import hashlib
 logging.basicConfig(filename='app.log', filemode='a', level=logging.DEBUG, format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 
 app = Flask(__name__)
+app.config["SESSION_PERMANENT"] = False
+app.config["SESSION_TYPE"] = "filesystem"
+Session(app)
 
 
 @app.route("/", methods=['GET'])
@@ -27,10 +31,16 @@ def account():
 #     return render_template("login.html")
 
 
-@app.route("/listrequirements", methods=['GET'])
-def list_requirements():
+@app.route("/listglobalrequirements", methods=['GET'])
+def list_global_requirements():
     data = model.list_requirements()
-    return render_template("listrequirements.html", data=data)
+    return jsonify(data)
+
+
+# @app.route("/listrequirements", methods=['GET'])
+# def list_requirements():
+#     data = model.list_requirements()
+#     return render_template("listrequirements.html", data=data)
 
 
 @app.route("/create_account", methods=['GET'])
@@ -96,7 +106,7 @@ def get_phone_otp():
         res = Users.send_phone_verification_otp(data)
         return jsonify(res)
     except Exception as e:
-        return jsonify({'status': 'failure', 'reason': str(e), 'data': {}})
+        return jsonify({'status': 'failure', 'msg': str(e), 'data': {}})
 
 
 '''
@@ -111,13 +121,13 @@ def verify_phone_otp():
     try:
         data = dict()
         data['phoneVerificationOTP'] = request.form['otp']
-        data['phone'] = int(request.form['mobile'])
+        data['phone'] = str(request.form['mobile'])
 
         d = Users.verify_phone(**data)
         return jsonify(d)
     except Exception as e:
         print(e)
-        return jsonify({'status': 'failure', 'reason': str(e), 'data': {}})
+        return jsonify({'status': 'failure', 'msg': str(e), 'data': {}})
 
 
 @app.route("/sign_in", methods=['POST'])
@@ -126,10 +136,12 @@ def sign_in():
     data['password'] = request.form['password']
     data['phone'] = request.form['mobile']
     res = Users.sign_in(**data)
+
     if res:
-        return 'success'
+        session['user'] = data['phone']
+        return jsonify({'status': 'success', 'data': dict(session)})
     else:
-        return 'failure'
+        return jsonify({'status': 'failure', 'msg': 'Login Failed'})
 
 
 '''#############################################General APIs######################################'''

@@ -40,9 +40,15 @@ function submitLogin()
         password: $("#password").val()
       },
       success: function (result) {
-        alert(result)
+        if(result.status=="success")
+        {
         if(localStorage.getItem("mode") != null)
             location.href="/" + localStorage.getItem("mode");
+            }
+            else
+            {
+            alert(result.msg)
+            }
       }
     });
 }
@@ -98,15 +104,16 @@ function submitOTP()
         otp: $("#otp").val()
       },
       success: function (result) {
-        alert(result);
+      alert(result);
         if(result.status=="success"){
                 if(localStorage.getItem("mode") != null)
                    location.href="/" + localStorage.getItem("mode");
 
         } else{
-          alert(result.msg)
+          alert(result.msg);
         }
-
+}
 
     });
 }
+

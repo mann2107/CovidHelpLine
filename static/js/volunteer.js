@@ -3,10 +3,9 @@ function getGlobalRequirements()
 
     $.ajax({
       type: "GET",
-      url: "/",
+      url: "/listglobalrequirements",
       success: function (result) {
-
-        result = "[{'requirement_summary': 'Oxygen, 1', 'location': 'Jamalpur, India', 'patient_id': 'fiWNAEhM3qdVBMns8vTn5u', 'req_posted_at': '', 'status': 'Open', 'picked_by': 0, 'requirement_id': 'WxDHNUdF9y2hyUBLeSJadT', 'posted': '24.54 minutes ago', 'pick': ''}, {'requirement_summary': 'Covid Bed, 2', 'location': 'Jamalpur, India', 'patient_id': 'fiWNAEhM3qdVBMns8vTn5u', 'req_posted_at': '', 'status': 'Open', 'picked_by': 0, 'requirement_id': 'gogmLn7CPEj2s3LH9J4G4o', 'posted': '24.54 minutes ago', 'pick': ''}]"
+        alert(result)
         result = result.replace(/'/g, '"');
         console.log(result);
         console.log(JSON.parse(result))
@@ -23,8 +22,6 @@ function getGlobalRequirements()
 
         }
         )
-
-
         $("#tblGlobalRequirement").html(str)
 
       }

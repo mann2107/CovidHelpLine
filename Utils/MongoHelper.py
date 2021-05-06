@@ -57,3 +57,17 @@ def upsert(collection_name, criteria, **fields):
         response = None
     return response
 
+
+def update(collection_name, criteria, **fields):
+    col = get_collection(collection_name)
+    response = []
+    result = ''
+    try:
+        if bool(fields):
+            result = col.update(criteria, {'$set': fields}, upsert=True)
+        else:
+            response = None
+    except Exception as e:
+        print(e)
+        response = None
+    return response
