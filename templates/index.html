@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src={{ url_for('static',filename='js/jquery-3.5.min.js') }}> </script>
+    <script type="text/javascript" src={{ url_for('static',filename='js/bootstrap.min.js') }}> </script>
+    <script type="text/javascript" src={{ url_for('static',filename='js/index.js') }}> </script>
+
+    <link rel="stylesheet" href={{ url_for('static',filename='css/jquery-ui.css') }} />
+    <link rel="stylesheet" href={{ url_for('static',filename='css/bootstrap.min.css') }} />
+    <link rel="stylesheet" href={{ url_for('static',filename='css/app.css') }} />
+
+    <title>Title</title>
+
+    <script>
+
+
+
+</script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" id="divLoginForm">
+            <div class="col-4"></div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <form id="form" class="mt-5 p-3">
+                    <div class="row">
+
+                     <div class="col-12 text-center">
+                         <button type="button" onclick="redirectToRequirement()" class="w-100 btn btn-outline-primary loginButton px-5 py-3 mt-3">Post a Requirement</button>
+                         <button type="button" onclick="redirectToVolunteer()" class="w-100 btn btn-outline-primary loginButton px-5 py-3 mt-3">Help a Patient</button>
+                     </div>
+
+                    </div>
+
+
+
+
+
+
+                </form>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.btn-check{
+    position:absolute;
+    clip: rect(0,0,0,0);
+}
+
+input:focus, select:focus, button:focus
+{
+outline: none;
+
+}
+
+.loginButton{
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.btn{
+    border-radius: 3.65rem !important;
+}

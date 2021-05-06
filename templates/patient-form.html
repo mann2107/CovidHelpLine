@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src={{ url_for(
+    'static',filename='js/jquery-3.5.min.js') }}> </script>
+    <script type="text/javascript" src={{ url_for(
+    'static',filename='js/bootstrap.min.js') }}> </script>
+    <script type="text/javascript" src={{ url_for(
+    'static',filename='js/app.js') }}> </script>
+
+    <link rel="stylesheet" href={{ url_for(
+    'static',filename='css/jquery-ui.css') }} />
+    <link rel="stylesheet" href={{ url_for(
+    'static',filename='css/bootstrap.min.css') }} />
+    <link rel="stylesheet" href={{ url_for(
+    'static',filename='css/app.css') }} />
+
+    <title>Patient Details</title>
+
+    <script>
+$(function () {
+
+
+
+    $( "form" ).on( "submit", function(e) {
+alert("acklana")
+    var dataString = $(this).serialize();
+
+    // alert(dataString); return false;
+
+ console.log(dataString)
+    $.ajax({
+      type: "POST",
+      url: "",
+      data: dataString,
+      success: function () {
+
+      }
+    });
+
+    e.preventDefault();
+  });
+});
+
+
+
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row" id="divLoginForm">
+        <div class="col-4"></div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <form id="form" class="mt-5 border p-3">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-primary text-center">Requirement Details</h5>
+                    </div>
+
+                    <div class="col-12 py-2">
+<!--                        <input type="text" class="form-control" name="requirement" title="Name" placeholder="What do you need?"/>-->
+                        <input list="requirement" name="requirement" class="form-control" id="browser" placeholder="What do you need?" />
+  <datalist id="requirement">
+    <option value="Ambulance">
+    <option value="Cooked Food">
+    <option value="Covid Beds">
+    <option value="Covid Beds with Oxygen">
+    <option value="Medicine">
+      <option value="Oxygen on Location">
+      <option value="Oxygen Cans">
+      <option value="Oxygen Concentrator">
+      <option value="Oxygen Cylinder">
+      <option value="Oxygen Refill">
+      <option value="Oxygen Service">
+      <option value="Plasma">
+
+  </datalist>
+                    </div>
+                    <div class="col-12 py-2">
+                        <input type="text" class="form-control" name="units" title="Name" placeholder="How much units you need?"/>
+                    </div>
+                    <div class="col-12 py-2">
+                        <input type="text" class="form-control" name="name" title="Name" placeholder="Patient Name"/>
+                    </div>
+                    <div class="col-12 py-2">
+                        <input type="text" class="form-control" name="id_type" placeholder="Id Type"/>
+                    </div>
+
+                    <div class="col-12 py-2 text-center">
+                        <input type="text" class="form-control" name="id_no" placeholder="Id Number"/>
+                    </div>
+
+
+                    <div class="col-12 py-2 text-center">
+                        <input type="text" class="form-control" name="phone" placeholder="Mobile"/>
+                    </div>
+
+
+                    <div class="col-12 py-2 text-center">
+                        <input type="number" class="form-control" name="age" placeholder="Patient Age"/>
+                    </div>
+
+                    <div class="col-12 py-2 text-center">
+                        <input type="number" class="form-control" name="hospital" placeholder="Hospital"/>
+                    </div>
+
+                    <div class="col-12 py-2 text-center">
+                        <input type="text" class="form-control" name="state" placeholder="State"/>
+                    </div>
+
+                    <div class="col-12 py-2 text-center">
+                        <input type="text" class="form-control" name="city" placeholder="City"/>
+                    </div>
+
+                    <div class="col-12 py-2 text-center">
+                        <input type="text" class="form-control" name="location" placeholder="Location"/>
+                    </div>
+
+                    <div class="col-12 py-2 text-center">
+                        <input type="submit" class="btn btn-primary w-100" value="Submit"/>
+                        <a class="btn btn-primary w-100 mt-3" href="/requirement">Go Back</a>
+                    </div>
+
+
+                </div>
+
+
+            </form>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src={{ url_for(
+    'static',filename='js/jquery-3.5.min.js') }}> </script>
+    <script type="text/javascript" src={{ url_for(
+    'static',filename='js/bootstrap.min.js') }}> </script>
+    <script type="text/javascript" src={{ url_for(
+    'static',filename='js/login.js') }}> </script>
+
+
+    <link rel="stylesheet" href={{ url_for(
+    'static',filename='css/jquery-ui.css') }} />
+    <link rel="stylesheet" href={{ url_for(
+    'static',filename='css/bootstrap.min.css') }} />
+    <link rel="stylesheet" href={{ url_for(
+    'static',filename='css/app.css') }} />
+
+    <title>Title</title>
+
+    <script>
+    $(function () {
+
+
+    });
+    function submitRegister() {
+      var form = $('#formRegister');
+      // serialize the form
+      var serialized = form.serialize();
+      alert(serialized)
+      $.ajax({
+        url: "/sign_up",
+        type: "POST",
+        data: serialized,
+        success: function (result, status, xhr) {
+          alert("User Succesfully Registered")
+          $("#div_thanks").removeClass("d-none")
+          $("#div_form").addClass("d-none")
+        },
+        error:function(result, status, xhr) {
+          alert("User Failed to Register")
+          $("#div_thanks").removeClass("d-none")
+          $("#div_form").addClass("d-none")
+        }
+      });
+
+    }
+    function submitLogin() {
+      var form = $('#form');
+      // serialize the form
+      var serialized = form.serialize();
+      alert(serialized)
+      $.ajax({
+        url: "/sign_in",
+        type: "POST",
+        data: serialized,
+        success: function (result, status, xhr) {
+          alert("User Succesfully Logged In")
+          $("#div_thanks").removeClass("d-none")
+          $("#div_form").addClass("d-none")
+        },
+        error:function(result, status, xhr) {
+          alert("User Failed to Login")
+          $("#div_thanks").removeClass("d-none")
+          $("#div_form").addClass("d-none")
+        }
+      });
+
+    }
+
+    </script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row" id="divLoginForm">
+        <div class="col-4"></div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <!--            <form id="form" class="mt-5 border p-3">-->
+            <div class="row">
+                <form id="formLogin" class="mt-5 border p-3">
+                    <div class="col-12 d-none" id="divLogin">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="text-primary text-center">Login</h3>
+                            </div>
+                            <div class="col-12 text-center py-2">
+                                <input type="text" maxlength="10" class="form-control" name="mobile" id="mobile_login"
+                                       title="Mobile"
+                                       placeholder="Mobile*"/>
+                            </div>
+                            <div class="col-12 text-center py-2">
+                                <input type="password" class="form-control" name="password" id="password"
+                                       title="Password"
+                                       placeholder="Password*"/>
+                            </div>
+                            <div class="col-12 text-center py-1">
+                                <button type="button" onclick="submitLogin()" class="btn btn-primary w-100 px-4">
+                                    Submit
+                                </button>
+                            </div>
+                            <div class="col-12 text-center py-1">
+                                <a href="#" onclick="showRegister()">New User?</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </form>
+
+                <form id="formRegister" class="mt-5 border p-3">
+                    <div class="col-12" id="divRegister">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="text-primary text-center">Register</h3>
+                            </div>
+                            <div class="col-12 text-center py-2">
+                                <input type="text" class="form-control" maxlength="10" name="mobile"
+                                       id="mobile_register" title="Mobile"
+                                       placeholder="Mobile*"/>
+
+                            </div>
+
+
+                            <div class="col-12 text-center py-2">
+                                <input type="password" class="form-control" name="password" id="newpassword"
+                                       title="New Passowrd"
+                                       placeholder="New Password*"/>
+
+                            </div>
+
+                            <div class="col-12 text-center py-2">
+                                <input type="password" class="form-control" name="confirmpassword" id="confirmpassword"
+                                       title="Confirm Password"
+                                       placeholder="Confirm Password*"/>
+
+                            </div>
+
+
+                            <div class="col-12 text-center py-1">
+                                <button type="button" onclick="submitRegister()" class="btn btn-primary w-100 px-4">
+                                    Submit and Request
+                                    OTP
+                                </button>
+
+                            </div>
+
+                            <div class="col-12 text-center py-1">
+                                <a href="#" onclick="showLogin()">Returning User?</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form id="formOTP" class="mt-5 border p-3">
+                    <div class="col-12 d-none" id="divOTP">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="text-primary text-center">OTP Verification</h3>
+                            </div>
+                            <div class="col-12 text-center py-2">
+                                <input type="text" class="form-control" maxlength="6" name="otp" id="otp" title="OTP"
+                                       placeholder="OTP*"/>
+
+                            </div>
+
+
+                            <div class="col-12 text-center py-1">
+                                <button type="button" onclick="submitOTP()" class="btn btn-primary w-100 px-4">Submit
+                                    OTP
+                                </button>
+
+                            </div>
+
+                            <div class="col-12 text-center py-2">
+                                <small class="text-dark">Didn't receive OTP yet? <a href="#" onclick="showLogin()">Click
+                                    to Resend</a></small>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+
+            <!--            </form>-->
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src={{ url_for(
+    'static',filename='js/jquery-3.5.min.js') }}> </script>
+    <script type="text/javascript" src={{ url_for(
+    'static',filename='js/bootstrap.min.js') }}> </script>
+    <script type="text/javascript" src={{ url_for(
+    'static',filename='js/app.js') }}> </script>
+
+    <link rel="stylesheet" href={{ url_for(
+    'static',filename='css/jquery-ui.css') }} />
+    <link rel="stylesheet" href={{ url_for(
+    'static',filename='css/bootstrap.min.css') }} />
+    <link rel="stylesheet" href={{ url_for(
+    'static',filename='css/app.css') }} />
+
+    <title>Patient Details</title>
+
+    <script>
+$(function () {
+
+
+
+    $( "form" ).on( "submit", function(e) {
+alert("acklana")
+    var dataString = $(this).serialize();
+
+    // alert(dataString); return false;
+
+ console.log(dataString)
+    $.ajax({
+      type: "POST",
+      url: "",
+      data: dataString,
+      success: function () {
+
+      }
+    });
+
+    e.preventDefault();
+  });
+});
+
+
+
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row" id="divLoginForm">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <form id="form" class="mt-5 border p-3">
+                <div class="row">
+
+
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Requirement</th>
+                            <th>Location</th>
+                            <th>Posted</th>
+                            <th>Patient</th>
+                            <th>Pick</th>
+                            <th>PickedBy</th>
+                            <th>Total Volunteers</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {%for d in data%}
+                        <tr>
+                            <td>{{d['requirement_summary']}}</td>
+                            <td>{{d['location']}}</td>
+                            <td>{{d['posted']}}</td>
+                            <td><a href="{{d['patient_id']}}">See Details</a></td>
+                            <td><a href="{{d['pick']}}">Pick</a></td>
+                            <td>{{d['picked_by']}}</td>
+                            <td>{{d['total_volunteer']}}</td>
+                        </tr>
+                        {%endfor%}
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+
+            </form>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+</body>
+</html>
