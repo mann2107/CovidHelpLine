@@ -25,50 +25,7 @@
 
 
     });
-    function submitRegister() {
-      var form = $('#formRegister');
-      // serialize the form
-      var serialized = form.serialize();
-      alert(serialized)
-      $.ajax({
-        url: "/sign_up",
-        type: "POST",
-        data: serialized,
-        success: function (result, status, xhr) {
-          alert("User Succesfully Registered")
-          $("#div_thanks").removeClass("d-none")
-          $("#div_form").addClass("d-none")
-        },
-        error:function(result, status, xhr) {
-          alert("User Failed to Register")
-          $("#div_thanks").removeClass("d-none")
-          $("#div_form").addClass("d-none")
-        }
-      });
 
-    }
-    function submitLogin() {
-      var form = $('#form');
-      // serialize the form
-      var serialized = form.serialize();
-      alert(serialized)
-      $.ajax({
-        url: "/sign_in",
-        type: "POST",
-        data: serialized,
-        success: function (result, status, xhr) {
-          alert("User Succesfully Logged In")
-          $("#div_thanks").removeClass("d-none")
-          $("#div_form").addClass("d-none")
-        },
-        error:function(result, status, xhr) {
-          alert("User Failed to Login")
-          $("#div_thanks").removeClass("d-none")
-          $("#div_form").addClass("d-none")
-        }
-      });
-
-    }
 
     </script>
 
@@ -79,9 +36,9 @@
         <div class="col-4"></div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-            <!--            <form id="form" class="mt-5 border p-3">-->
-            <div class="row">
-                <form id="formLogin" class="mt-5 border p-3">
+            <form id="form" class="mt-5 border p-3">
+                <div class="row">
+
                     <div class="col-12 d-none" id="divLogin">
                         <div class="row">
                             <div class="col-12">
@@ -109,9 +66,7 @@
 
                         </div>
                     </div>
-                </form>
 
-                <form id="formRegister" class="mt-5 border p-3">
                     <div class="col-12" id="divRegister">
                         <div class="row">
                             <div class="col-12">
@@ -126,7 +81,7 @@
 
 
                             <div class="col-12 text-center py-2">
-                                <input type="password" class="form-control" name="password" id="newpassword"
+                                <input type="password" class="form-control" name="newpassword" id="newpassword"
                                        title="New Passowrd"
                                        placeholder="New Password*"/>
 
@@ -153,9 +108,7 @@
                             </div>
                         </div>
                     </div>
-                </form>
 
-                <form id="formOTP" class="mt-5 border p-3">
                     <div class="col-12 d-none" id="divOTP">
                         <div class="row">
                             <div class="col-12">
@@ -181,12 +134,12 @@
                             </div>
                         </div>
                     </div>
-                </form>
-
-            </div>
 
 
-            <!--            </form>-->
+                </div>
+
+
+            </form>
         </div>
         <div class="col-4"></div>
     </div>

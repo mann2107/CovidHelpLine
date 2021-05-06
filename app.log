@@ -124,3 +124,394 @@
 06-May-21 09:30:22 - 127.0.0.1 - - [06/May/2021 09:30:22] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
 06-May-21 09:30:27 - New user registered with phone 9643431916
 06-May-21 09:30:27 - 127.0.0.1 - - [06/May/2021 09:30:27] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 09:37:15 - 127.0.0.1 - - [06/May/2021 09:37:15] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 09:37:15 - 127.0.0.1 - - [06/May/2021 09:37:15] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 09:37:23 - New user registered with phone 9643431916
+06-May-21 09:37:23 - 127.0.0.1 - - [06/May/2021 09:37:23] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 09:39:09 -  * Restarting with stat
+06-May-21 09:39:10 -  * Debugger is active!
+06-May-21 09:39:10 -  * Debugger PIN: 106-288-604
+06-May-21 09:39:10 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 09:39:12 - 127.0.0.1 - - [06/May/2021 09:39:12] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 09:39:13 - 127.0.0.1 - - [06/May/2021 09:39:13] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 09:39:13 - 127.0.0.1 - - [06/May/2021 09:39:13] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 09:39:28 - New user registered with phone 
+06-May-21 09:39:28 - 127.0.0.1 - - [06/May/2021 09:39:28] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 09:39:33 - 127.0.0.1 - - [06/May/2021 09:39:33] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 09:39:33 - 127.0.0.1 - - [06/May/2021 09:39:33] "[37mGET /static/js/jquery-3.5.min.js HTTP/1.1[0m" 200 -
+06-May-21 09:39:33 - 127.0.0.1 - - [06/May/2021 09:39:33] "[37mGET /static/css/jquery-ui.css HTTP/1.1[0m" 200 -
+06-May-21 09:39:33 - 127.0.0.1 - - [06/May/2021 09:39:33] "[37mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+06-May-21 09:39:33 - 127.0.0.1 - - [06/May/2021 09:39:33] "[37mGET /static/css/app.css HTTP/1.1[0m" 200 -
+06-May-21 09:39:33 - 127.0.0.1 - - [06/May/2021 09:39:33] "[37mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+06-May-21 09:39:33 - 127.0.0.1 - - [06/May/2021 09:39:33] "[37mGET /static/js/login.js HTTP/1.1[0m" 200 -
+06-May-21 09:39:33 - 127.0.0.1 - - [06/May/2021 09:39:33] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 09:39:33 - 127.0.0.1 - - [06/May/2021 09:39:33] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 09:39:33 - 127.0.0.1 - - [06/May/2021 09:39:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+06-May-21 09:39:34 - 127.0.0.1 - - [06/May/2021 09:39:34] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 09:39:34 - 127.0.0.1 - - [06/May/2021 09:39:34] "[37mGET /static/js/jquery-3.5.min.js HTTP/1.1[0m" 200 -
+06-May-21 09:39:34 - 127.0.0.1 - - [06/May/2021 09:39:34] "[37mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+06-May-21 09:39:34 - 127.0.0.1 - - [06/May/2021 09:39:34] "[37mGET /static/css/jquery-ui.css HTTP/1.1[0m" 200 -
+06-May-21 09:39:34 - 127.0.0.1 - - [06/May/2021 09:39:34] "[37mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+06-May-21 09:39:34 - 127.0.0.1 - - [06/May/2021 09:39:34] "[37mGET /static/css/app.css HTTP/1.1[0m" 200 -
+06-May-21 09:39:34 - 127.0.0.1 - - [06/May/2021 09:39:34] "[37mGET /static/js/login.js HTTP/1.1[0m" 200 -
+06-May-21 09:39:34 - 127.0.0.1 - - [06/May/2021 09:39:34] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 09:39:34 - 127.0.0.1 - - [06/May/2021 09:39:34] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 09:39:35 - 127.0.0.1 - - [06/May/2021 09:39:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+06-May-21 09:41:05 - New user registered with phone 
+06-May-21 09:41:05 - 127.0.0.1 - - [06/May/2021 09:41:05] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 09:41:19 -  * Restarting with stat
+06-May-21 09:41:20 -  * Debugger is active!
+06-May-21 09:41:20 -  * Debugger PIN: 106-288-604
+06-May-21 09:41:20 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 09:41:24 - 127.0.0.1 - - [06/May/2021 09:41:24] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 09:41:24 - 127.0.0.1 - - [06/May/2021 09:41:24] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 09:41:24 - 127.0.0.1 - - [06/May/2021 09:41:24] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 09:41:30 - 127.0.0.1 - - [06/May/2021 09:41:30] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+06-May-21 09:41:52 - 127.0.0.1 - - [06/May/2021 09:41:52] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 09:41:52 - 127.0.0.1 - - [06/May/2021 09:41:52] "[37mGET /static/js/jquery-3.5.min.js HTTP/1.1[0m" 200 -
+06-May-21 09:41:53 - 127.0.0.1 - - [06/May/2021 09:41:53] "[37mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+06-May-21 09:41:53 - 127.0.0.1 - - [06/May/2021 09:41:53] "[37mGET /static/js/login.js HTTP/1.1[0m" 200 -
+06-May-21 09:41:53 - 127.0.0.1 - - [06/May/2021 09:41:53] "[37mGET /static/css/jquery-ui.css HTTP/1.1[0m" 200 -
+06-May-21 09:41:53 - 127.0.0.1 - - [06/May/2021 09:41:53] "[37mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+06-May-21 09:41:53 - 127.0.0.1 - - [06/May/2021 09:41:53] "[37mGET /static/css/app.css HTTP/1.1[0m" 200 -
+06-May-21 09:41:53 - 127.0.0.1 - - [06/May/2021 09:41:53] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 09:41:53 - 127.0.0.1 - - [06/May/2021 09:41:53] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 09:41:53 - 127.0.0.1 - - [06/May/2021 09:41:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+06-May-21 09:41:54 - 127.0.0.1 - - [06/May/2021 09:41:54] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 09:41:54 - 127.0.0.1 - - [06/May/2021 09:41:54] "[37mGET /static/js/jquery-3.5.min.js HTTP/1.1[0m" 200 -
+06-May-21 09:41:54 - 127.0.0.1 - - [06/May/2021 09:41:54] "[37mGET /static/css/jquery-ui.css HTTP/1.1[0m" 200 -
+06-May-21 09:41:54 - 127.0.0.1 - - [06/May/2021 09:41:54] "[37mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+06-May-21 09:41:54 - 127.0.0.1 - - [06/May/2021 09:41:54] "[37mGET /static/css/app.css HTTP/1.1[0m" 200 -
+06-May-21 09:41:54 - 127.0.0.1 - - [06/May/2021 09:41:54] "[37mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+06-May-21 09:41:54 - 127.0.0.1 - - [06/May/2021 09:41:54] "[37mGET /static/js/login.js HTTP/1.1[0m" 200 -
+06-May-21 09:41:54 - 127.0.0.1 - - [06/May/2021 09:41:54] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 09:41:54 - 127.0.0.1 - - [06/May/2021 09:41:54] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 09:41:54 - 127.0.0.1 - - [06/May/2021 09:41:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+06-May-21 09:42:10 - 127.0.0.1 - - [06/May/2021 09:42:10] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 09:42:10 - 127.0.0.1 - - [06/May/2021 09:42:10] "[37mGET /static/js/jquery-3.5.min.js HTTP/1.1[0m" 200 -
+06-May-21 09:42:10 - 127.0.0.1 - - [06/May/2021 09:42:10] "[37mGET /static/js/login.js HTTP/1.1[0m" 200 -
+06-May-21 09:42:10 - 127.0.0.1 - - [06/May/2021 09:42:10] "[37mGET /static/css/app.css HTTP/1.1[0m" 200 -
+06-May-21 09:42:10 - 127.0.0.1 - - [06/May/2021 09:42:10] "[37mGET /static/css/jquery-ui.css HTTP/1.1[0m" 200 -
+06-May-21 09:42:10 - 127.0.0.1 - - [06/May/2021 09:42:10] "[37mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+06-May-21 09:42:10 - 127.0.0.1 - - [06/May/2021 09:42:10] "[37mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+06-May-21 09:42:10 - 127.0.0.1 - - [06/May/2021 09:42:10] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 09:42:10 - 127.0.0.1 - - [06/May/2021 09:42:10] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 09:42:10 - 127.0.0.1 - - [06/May/2021 09:42:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+06-May-21 09:42:17 - New user registered with phone 9643431916
+06-May-21 09:42:17 - 127.0.0.1 - - [06/May/2021 09:42:17] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 09:42:58 -  * Detected change in 'E:\\Ennoble\\app.py', reloading
+06-May-21 09:42:58 -  * Restarting with stat
+06-May-21 09:42:59 -  * Debugger is active!
+06-May-21 09:42:59 -  * Debugger PIN: 106-288-604
+06-May-21 09:42:59 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 09:43:35 -  * Detected change in 'E:\\Ennoble\\app.py', reloading
+06-May-21 09:43:35 -  * Restarting with stat
+06-May-21 09:43:36 -  * Debugger is active!
+06-May-21 09:43:36 -  * Debugger PIN: 106-288-604
+06-May-21 09:43:36 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 09:45:24 -  * Detected change in 'E:\\Ennoble\\app.py', reloading
+06-May-21 09:45:24 -  * Restarting with stat
+06-May-21 09:45:25 -  * Debugger is active!
+06-May-21 09:45:25 -  * Debugger PIN: 106-288-604
+06-May-21 09:45:25 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 09:45:38 -  * Detected change in 'E:\\Ennoble\\app.py', reloading
+06-May-21 09:45:38 -  * Restarting with stat
+06-May-21 09:45:39 -  * Debugger is active!
+06-May-21 09:45:39 -  * Debugger PIN: 106-288-604
+06-May-21 09:45:39 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 09:46:34 - 127.0.0.1 - - [06/May/2021 09:46:34] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 09:46:34 - 127.0.0.1 - - [06/May/2021 09:46:34] "[37mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+06-May-21 09:46:34 - 127.0.0.1 - - [06/May/2021 09:46:34] "[37mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+06-May-21 09:46:34 - 127.0.0.1 - - [06/May/2021 09:46:34] "[37mGET /static/js/jquery-3.5.min.js HTTP/1.1[0m" 200 -
+06-May-21 09:46:34 - 127.0.0.1 - - [06/May/2021 09:46:34] "[37mGET /static/css/jquery-ui.css HTTP/1.1[0m" 200 -
+06-May-21 09:46:34 - 127.0.0.1 - - [06/May/2021 09:46:34] "[37mGET /static/css/app.css HTTP/1.1[0m" 200 -
+06-May-21 09:46:34 - 127.0.0.1 - - [06/May/2021 09:46:34] "[37mGET /static/js/login.js HTTP/1.1[0m" 200 -
+06-May-21 09:46:35 - 127.0.0.1 - - [06/May/2021 09:46:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+06-May-21 09:46:47 -  * Restarting with stat
+06-May-21 09:46:48 -  * Debugger is active!
+06-May-21 09:46:48 -  * Debugger PIN: 106-288-604
+06-May-21 09:46:48 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 09:46:51 - 127.0.0.1 - - [06/May/2021 09:46:51] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 09:46:54 - New user registered with phone 9643431916
+06-May-21 09:46:54 - 127.0.0.1 - - [06/May/2021 09:46:54] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 09:47:11 - 127.0.0.1 - - [06/May/2021 09:47:11] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 09:47:11 - 127.0.0.1 - - [06/May/2021 09:47:11] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 09:47:17 - 127.0.0.1 - - [06/May/2021 09:47:17] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+06-May-21 09:48:23 -  * Detected change in 'E:\\Ennoble\\app.py', reloading
+06-May-21 09:48:23 -  * Restarting with stat
+06-May-21 09:48:24 -  * Debugger is active!
+06-May-21 09:48:24 -  * Debugger PIN: 106-288-604
+06-May-21 09:48:24 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 09:48:47 -  * Restarting with stat
+06-May-21 09:48:48 -  * Debugger is active!
+06-May-21 09:48:48 -  * Debugger PIN: 106-288-604
+06-May-21 09:48:48 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 09:48:53 - 127.0.0.1 - - [06/May/2021 09:48:53] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 09:48:53 - 127.0.0.1 - - [06/May/2021 09:48:53] "[37mGET /static/js/jquery-3.5.min.js HTTP/1.1[0m" 200 -
+06-May-21 09:48:53 - 127.0.0.1 - - [06/May/2021 09:48:53] "[37mGET /static/css/jquery-ui.css HTTP/1.1[0m" 200 -
+06-May-21 09:48:53 - 127.0.0.1 - - [06/May/2021 09:48:53] "[37mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+06-May-21 09:48:53 - 127.0.0.1 - - [06/May/2021 09:48:53] "[37mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+06-May-21 09:48:53 - 127.0.0.1 - - [06/May/2021 09:48:53] "[37mGET /static/css/app.css HTTP/1.1[0m" 200 -
+06-May-21 09:48:53 - 127.0.0.1 - - [06/May/2021 09:48:53] "[37mGET /static/js/login.js HTTP/1.1[0m" 200 -
+06-May-21 09:48:53 - 127.0.0.1 - - [06/May/2021 09:48:53] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 09:48:53 - 127.0.0.1 - - [06/May/2021 09:48:53] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 09:48:53 - 127.0.0.1 - - [06/May/2021 09:48:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+06-May-21 09:49:01 - New user registered with phone 9643431916
+06-May-21 09:49:02 - 127.0.0.1 - - [06/May/2021 09:49:02] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 09:49:52 -  * Detected change in 'E:\\Ennoble\\app.py', reloading
+06-May-21 09:49:52 -  * Restarting with stat
+06-May-21 09:49:53 -  * Debugger is active!
+06-May-21 09:49:53 -  * Debugger PIN: 106-288-604
+06-May-21 09:49:53 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 09:50:20 - 127.0.0.1 - - [06/May/2021 09:50:20] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 09:50:20 - 127.0.0.1 - - [06/May/2021 09:50:20] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 09:50:20 - 127.0.0.1 - - [06/May/2021 09:50:20] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 09:50:22 - 127.0.0.1 - - [06/May/2021 09:50:22] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 09:50:22 - 127.0.0.1 - - [06/May/2021 09:50:22] "[37mGET /static/js/jquery-3.5.min.js HTTP/1.1[0m" 200 -
+06-May-21 09:50:22 - 127.0.0.1 - - [06/May/2021 09:50:22] "[37mGET /static/css/jquery-ui.css HTTP/1.1[0m" 200 -
+06-May-21 09:50:22 - 127.0.0.1 - - [06/May/2021 09:50:22] "[37mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+06-May-21 09:50:22 - 127.0.0.1 - - [06/May/2021 09:50:22] "[37mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+06-May-21 09:50:22 - 127.0.0.1 - - [06/May/2021 09:50:22] "[37mGET /static/css/app.css HTTP/1.1[0m" 200 -
+06-May-21 09:50:22 - 127.0.0.1 - - [06/May/2021 09:50:22] "[37mGET /static/js/login.js HTTP/1.1[0m" 200 -
+06-May-21 09:50:22 - 127.0.0.1 - - [06/May/2021 09:50:22] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 09:50:22 - 127.0.0.1 - - [06/May/2021 09:50:22] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 09:50:22 - 127.0.0.1 - - [06/May/2021 09:50:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+06-May-21 09:50:35 - New user registered with phone 9643431916
+06-May-21 09:50:36 - 127.0.0.1 - - [06/May/2021 09:50:36] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 09:50:55 - 127.0.0.1 - - [06/May/2021 09:50:55] "[37mPOST /verify_phone_otp HTTP/1.1[0m" 200 -
+06-May-21 09:50:55 - 127.0.0.1 - - [06/May/2021 09:50:55] "[37mGET /requirement HTTP/1.1[0m" 200 -
+06-May-21 09:50:55 - 127.0.0.1 - - [06/May/2021 09:50:55] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 09:50:55 - 127.0.0.1 - - [06/May/2021 09:50:55] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 09:50:55 - 127.0.0.1 - - [06/May/2021 09:50:55] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 09:51:45 - 127.0.0.1 - - [06/May/2021 09:51:45] "[37mGET /requirement-form HTTP/1.1[0m" 200 -
+06-May-21 09:51:45 - 127.0.0.1 - - [06/May/2021 09:51:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+06-May-21 09:51:45 - 127.0.0.1 - - [06/May/2021 09:51:45] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 09:51:45 - 127.0.0.1 - - [06/May/2021 09:51:45] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 09:52:44 - 127.0.0.1 - - [06/May/2021 09:52:44] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 09:52:46 - 127.0.0.1 - - [06/May/2021 09:52:46] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 09:52:51 - New user registered with phone 9643431916
+06-May-21 09:52:52 - 127.0.0.1 - - [06/May/2021 09:52:52] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 09:55:41 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 09:55:41 -  * Restarting with stat
+06-May-21 09:55:41 -  * Debugger is active!
+06-May-21 09:55:41 -  * Debugger PIN: 106-288-604
+06-May-21 09:55:41 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 09:56:28 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 09:56:28 -  * Restarting with stat
+06-May-21 09:56:28 -  * Debugger is active!
+06-May-21 09:56:28 -  * Debugger PIN: 106-288-604
+06-May-21 09:56:28 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 09:56:34 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 09:56:34 -  * Restarting with stat
+06-May-21 09:56:35 -  * Debugger is active!
+06-May-21 09:56:35 -  * Debugger PIN: 106-288-604
+06-May-21 09:56:35 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 09:57:28 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 09:57:28 -  * Restarting with stat
+06-May-21 09:57:28 -  * Debugger is active!
+06-May-21 09:57:28 -  * Debugger PIN: 106-288-604
+06-May-21 09:57:28 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 09:57:41 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 09:57:41 -  * Restarting with stat
+06-May-21 10:04:30 -  * Restarting with stat
+06-May-21 10:04:30 -  * Debugger is active!
+06-May-21 10:04:30 -  * Debugger PIN: 106-288-604
+06-May-21 10:04:30 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:04:38 - 127.0.0.1 - - [06/May/2021 10:04:38] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 10:04:54 - Error registering user with phone 9643431916
+06-May-21 10:04:54 - 127.0.0.1 - - [06/May/2021 10:04:54] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 10:07:39 -  * Restarting with stat
+06-May-21 10:07:41 -  * Debugger is active!
+06-May-21 10:07:41 -  * Debugger PIN: 106-288-604
+06-May-21 10:07:41 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:07:45 - 127.0.0.1 - - [06/May/2021 10:07:45] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 10:09:06 - Error registering user with phone 9643431916
+06-May-21 10:09:06 - 127.0.0.1 - - [06/May/2021 10:09:06] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 10:09:49 - Error registering user with phone 9643431916
+06-May-21 10:09:49 - 127.0.0.1 - - [06/May/2021 10:09:49] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 10:10:35 - Error registering user with phone 9643431916
+06-May-21 10:10:35 - 127.0.0.1 - - [06/May/2021 10:10:35] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 10:11:56 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 10:11:56 -  * Restarting with stat
+06-May-21 10:11:57 -  * Debugger is active!
+06-May-21 10:11:57 -  * Debugger PIN: 106-288-604
+06-May-21 10:11:57 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:12:36 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 10:12:36 -  * Restarting with stat
+06-May-21 10:12:38 -  * Debugger is active!
+06-May-21 10:12:38 -  * Debugger PIN: 106-288-604
+06-May-21 10:12:38 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:14:32 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 10:14:32 -  * Restarting with stat
+06-May-21 10:15:24 -  * Restarting with stat
+06-May-21 10:15:24 -  * Debugger is active!
+06-May-21 10:15:24 -  * Debugger PIN: 106-288-604
+06-May-21 10:15:24 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:15:28 - 127.0.0.1 - - [06/May/2021 10:15:28] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 10:15:31 - Error registering user with phone 9643431916
+06-May-21 10:15:31 - 127.0.0.1 - - [06/May/2021 10:15:31] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 10:16:05 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 10:16:05 -  * Restarting with stat
+06-May-21 10:16:05 -  * Debugger is active!
+06-May-21 10:16:05 -  * Debugger PIN: 106-288-604
+06-May-21 10:16:05 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:16:13 -  * Restarting with stat
+06-May-21 10:16:13 -  * Debugger is active!
+06-May-21 10:16:13 -  * Debugger PIN: 106-288-604
+06-May-21 10:16:13 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:16:19 - 127.0.0.1 - - [06/May/2021 10:16:19] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 10:16:23 - Error registering user with phone 9643431916
+06-May-21 10:16:23 - 127.0.0.1 - - [06/May/2021 10:16:23] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 10:16:37 -  * Restarting with stat
+06-May-21 10:16:39 -  * Debugger is active!
+06-May-21 10:16:39 -  * Debugger PIN: 106-288-604
+06-May-21 10:16:39 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:17:23 - Error registering user with phone 9643431916
+06-May-21 10:18:13 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 10:18:13 -  * Restarting with stat
+06-May-21 10:18:15 -  * Debugger is active!
+06-May-21 10:18:15 -  * Debugger PIN: 106-288-604
+06-May-21 10:18:15 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:18:31 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 10:18:31 -  * Restarting with stat
+06-May-21 10:18:33 -  * Debugger is active!
+06-May-21 10:18:33 -  * Debugger PIN: 106-288-604
+06-May-21 10:18:33 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:18:39 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 10:18:39 -  * Restarting with stat
+06-May-21 10:18:40 -  * Debugger is active!
+06-May-21 10:18:40 -  * Debugger PIN: 106-288-604
+06-May-21 10:18:40 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:19:03 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 10:19:03 -  * Restarting with stat
+06-May-21 10:19:05 -  * Debugger is active!
+06-May-21 10:19:05 -  * Debugger PIN: 106-288-604
+06-May-21 10:19:05 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:19:18 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 10:19:18 -  * Restarting with stat
+06-May-21 10:19:19 -  * Debugger is active!
+06-May-21 10:19:19 -  * Debugger PIN: 106-288-604
+06-May-21 10:19:19 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:19:58 -  * Restarting with stat
+06-May-21 10:19:59 -  * Debugger is active!
+06-May-21 10:19:59 -  * Debugger PIN: 106-288-604
+06-May-21 10:19:59 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:20:02 - 127.0.0.1 - - [06/May/2021 10:20:02] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 10:20:06 - Error registering user with phone 9643431916
+06-May-21 10:20:06 - 127.0.0.1 - - [06/May/2021 10:20:06] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 10:20:11 - Error registering user with phone 9643431916
+06-May-21 10:20:11 - 127.0.0.1 - - [06/May/2021 10:20:11] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 10:20:26 - New user registered with phone 9643431916
+06-May-21 10:20:26 - 127.0.0.1 - - [06/May/2021 10:20:26] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 10:20:46 - 127.0.0.1 - - [06/May/2021 10:20:46] "[37mPOST /verify_phone_otp HTTP/1.1[0m" 200 -
+06-May-21 10:20:46 - 127.0.0.1 - - [06/May/2021 10:20:46] "[37mGET /requirement HTTP/1.1[0m" 200 -
+06-May-21 10:20:46 - 127.0.0.1 - - [06/May/2021 10:20:46] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:22:23 - 127.0.0.1 - - [06/May/2021 10:22:23] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:22:26 - 127.0.0.1 - - [06/May/2021 10:22:26] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 10:22:29 - Error registering user with phone 9643431916
+06-May-21 10:22:29 - 127.0.0.1 - - [06/May/2021 10:22:29] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 10:23:45 - New user registered with phone 9643431916
+06-May-21 10:23:45 - 127.0.0.1 - - [06/May/2021 10:23:45] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 10:24:05 - 127.0.0.1 - - [06/May/2021 10:24:05] "[37mPOST /verify_phone_otp HTTP/1.1[0m" 200 -
+06-May-21 10:24:05 - 127.0.0.1 - - [06/May/2021 10:24:05] "[37mGET /requirement HTTP/1.1[0m" 200 -
+06-May-21 10:24:05 - 127.0.0.1 - - [06/May/2021 10:24:05] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:24:13 - 127.0.0.1 - - [06/May/2021 10:24:13] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 10:24:13 - 127.0.0.1 - - [06/May/2021 10:24:13] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 10:24:17 - 127.0.0.1 - - [06/May/2021 10:24:17] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 10:24:17 - 127.0.0.1 - - [06/May/2021 10:24:17] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 10:25:01 - New user registered with phone 9643431916
+06-May-21 10:25:01 - 127.0.0.1 - - [06/May/2021 10:25:01] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 10:25:06 - 127.0.0.1 - - [06/May/2021 10:25:06] "[37mPOST /verify_phone_otp HTTP/1.1[0m" 200 -
+06-May-21 10:25:06 - 127.0.0.1 - - [06/May/2021 10:25:06] "[37mGET /requirement HTTP/1.1[0m" 200 -
+06-May-21 10:25:07 - 127.0.0.1 - - [06/May/2021 10:25:07] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 10:25:07 - 127.0.0.1 - - [06/May/2021 10:25:07] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 10:25:07 - 127.0.0.1 - - [06/May/2021 10:25:07] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:29:35 -  * Restarting with stat
+06-May-21 10:29:35 -  * Debugger is active!
+06-May-21 10:29:35 -  * Debugger PIN: 106-288-604
+06-May-21 10:29:35 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:29:44 - 127.0.0.1 - - [06/May/2021 10:29:44] "[37mGET /requirement HTTP/1.1[0m" 200 -
+06-May-21 10:29:44 - 127.0.0.1 - - [06/May/2021 10:29:44] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 10:29:44 - 127.0.0.1 - - [06/May/2021 10:29:44] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 10:29:44 - 127.0.0.1 - - [06/May/2021 10:29:44] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:29:53 - 127.0.0.1 - - [06/May/2021 10:29:53] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:29:53 - 127.0.0.1 - - [06/May/2021 10:29:53] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 10:29:53 - 127.0.0.1 - - [06/May/2021 10:29:53] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 10:29:54 - 127.0.0.1 - - [06/May/2021 10:29:54] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 10:29:54 - 127.0.0.1 - - [06/May/2021 10:29:54] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 10:29:54 - 127.0.0.1 - - [06/May/2021 10:29:54] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 10:29:57 - New user registered with phone 9643431916
+06-May-21 10:29:58 - 127.0.0.1 - - [06/May/2021 10:29:58] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 10:30:17 - 127.0.0.1 - - [06/May/2021 10:30:17] "[37mPOST /verify_phone_otp HTTP/1.1[0m" 200 -
+06-May-21 10:30:17 - 127.0.0.1 - - [06/May/2021 10:30:17] "[37mGET /requirement HTTP/1.1[0m" 200 -
+06-May-21 10:30:17 - 127.0.0.1 - - [06/May/2021 10:30:17] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 10:30:17 - 127.0.0.1 - - [06/May/2021 10:30:17] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+06-May-21 10:30:17 - 127.0.0.1 - - [06/May/2021 10:30:17] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:31:44 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 10:31:44 -  * Restarting with stat
+06-May-21 10:31:44 -  * Debugger is active!
+06-May-21 10:31:44 -  * Debugger PIN: 106-288-604
+06-May-21 10:31:44 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:31:46 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 10:31:46 -  * Restarting with stat
+06-May-21 10:31:47 -  * Debugger is active!
+06-May-21 10:31:47 -  * Debugger PIN: 106-288-604
+06-May-21 10:31:47 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:32:00 -  * Restarting with stat
+06-May-21 10:32:01 -  * Debugger is active!
+06-May-21 10:32:01 -  * Debugger PIN: 106-288-604
+06-May-21 10:32:01 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:32:07 - 127.0.0.1 - - [06/May/2021 10:32:07] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:32:09 - 127.0.0.1 - - [06/May/2021 10:32:09] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 10:32:12 - New user registered with phone 9643431916
+06-May-21 10:32:13 - 127.0.0.1 - - [06/May/2021 10:32:13] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 10:32:36 - 127.0.0.1 - - [06/May/2021 10:32:36] "[37mPOST /verify_phone_otp HTTP/1.1[0m" 200 -
+06-May-21 10:32:36 - 127.0.0.1 - - [06/May/2021 10:32:36] "[37mGET /requirement HTTP/1.1[0m" 200 -
+06-May-21 10:32:36 - 127.0.0.1 - - [06/May/2021 10:32:36] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:33:32 -  * Restarting with stat
+06-May-21 10:33:33 -  * Debugger is active!
+06-May-21 10:33:33 -  * Debugger PIN: 106-288-604
+06-May-21 10:33:33 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:33:41 - 127.0.0.1 - - [06/May/2021 10:33:41] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:33:43 - 127.0.0.1 - - [06/May/2021 10:33:43] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 10:33:46 - New user registered with phone 9643431916
+06-May-21 10:33:46 - 127.0.0.1 - - [06/May/2021 10:33:46] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 10:33:51 - 127.0.0.1 - - [06/May/2021 10:33:51] "[37mPOST /verify_phone_otp HTTP/1.1[0m" 200 -
+06-May-21 10:33:51 - 127.0.0.1 - - [06/May/2021 10:33:51] "[37mGET /requirement HTTP/1.1[0m" 200 -
+06-May-21 10:33:51 - 127.0.0.1 - - [06/May/2021 10:33:51] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:35:13 -  * Detected change in 'E:\\Ennoble\\Utils\\Users.py', reloading
+06-May-21 10:35:13 -  * Restarting with stat
+06-May-21 10:35:13 -  * Debugger is active!
+06-May-21 10:35:13 -  * Debugger PIN: 106-288-604
+06-May-21 10:35:13 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:36:03 -  * Restarting with stat
+06-May-21 10:36:03 -  * Debugger is active!
+06-May-21 10:36:03 -  * Debugger PIN: 106-288-604
+06-May-21 10:36:03 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:36:08 - 127.0.0.1 - - [06/May/2021 10:36:08] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:36:10 - 127.0.0.1 - - [06/May/2021 10:36:10] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 10:36:13 - New user registered with phone 9643431916
+06-May-21 10:36:13 - 127.0.0.1 - - [06/May/2021 10:36:13] "[37mPOST /sign_up HTTP/1.1[0m" 200 -
+06-May-21 10:36:16 - 127.0.0.1 - - [06/May/2021 10:36:16] "[37mPOST /verify_phone_otp HTTP/1.1[0m" 200 -
+06-May-21 10:36:16 - 127.0.0.1 - - [06/May/2021 10:36:16] "[37mGET /requirement HTTP/1.1[0m" 200 -
+06-May-21 10:36:16 - 127.0.0.1 - - [06/May/2021 10:36:16] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:40:43 - 127.0.0.1 - - [06/May/2021 10:40:43] "[37mGET /requirement-profile HTTP/1.1[0m" 200 -
+06-May-21 10:41:29 - 127.0.0.1 - - [06/May/2021 10:41:29] "[37mGET /requirement HTTP/1.1[0m" 200 -
+06-May-21 10:41:29 - 127.0.0.1 - - [06/May/2021 10:41:29] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:41:32 - 127.0.0.1 - - [06/May/2021 10:41:32] "[37mGET /requirement-form HTTP/1.1[0m" 200 -
+06-May-21 10:41:36 - 127.0.0.1 - - [06/May/2021 10:41:36] "[37mGET /requirement HTTP/1.1[0m" 200 -
+06-May-21 10:41:36 - 127.0.0.1 - - [06/May/2021 10:41:36] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:41:39 - 127.0.0.1 - - [06/May/2021 10:41:39] "[37mGET /requirement-form HTTP/1.1[0m" 200 -
+06-May-21 10:42:54 - 127.0.0.1 - - [06/May/2021 10:42:54] "[37mGET /volunteer HTTP/1.1[0m" 200 -
+06-May-21 10:42:55 - 127.0.0.1 - - [06/May/2021 10:42:55] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:42:55 - 127.0.0.1 - - [06/May/2021 10:42:55] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:46:45 -  * Detected change in 'E:\\Ennoble\\app.py', reloading
+06-May-21 10:46:45 -  * Restarting with stat
+06-May-21 10:46:45 -  * Debugger is active!
+06-May-21 10:46:45 -  * Debugger PIN: 106-288-604
+06-May-21 10:46:45 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06-May-21 10:47:09 - 127.0.0.1 - - [06/May/2021 10:47:09] "[37mGET / HTTP/1.1[0m" 200 -
+06-May-21 10:47:11 - 127.0.0.1 - - [06/May/2021 10:47:11] "[37mGET /login HTTP/1.1[0m" 200 -
+06-May-21 10:47:25 - 127.0.0.1 - - [06/May/2021 10:47:25] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+06-May-21 10:47:46 - 127.0.0.1 - - [06/May/2021 10:47:46] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+06-May-21 10:47:46 - 127.0.0.1 - - [06/May/2021 10:47:46] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -

@@ -34,13 +34,13 @@ function submitLogin()
 
     $.ajax({
       type: "POST",
-      url: "/",
+      url: "/sign_in",
       data: {
         mobile: $("#mobile_login").val(),
         password: $("#password").val()
       },
-      success: function () {
-
+      success: function (result) {
+        alert(result)
         if(localStorage.getItem("mode") != null)
             location.href="/" + localStorage.getItem("mode");
       }
@@ -60,20 +60,24 @@ function submitRegister()
         alert("New Password and confirm password should be same")
         return;
     }
-showOTP()
+
     $.ajax({
       type: "POST",
-      url: "/",
+      url: "/sign_up",
       data: {
         mobile: $("#mobile_register").val(),
         password: $("#newpassword").val()
       },
-      success: function () {
-
-        showOTP()
-      }
-    });
-}
+      success: function (result) {
+        if(result.status=="success")
+                showOTP()
+                else
+                {
+                alert(result.msg)
+                }
+              }
+            });
+    }
 
 
 
@@ -88,15 +92,21 @@ function submitOTP()
 
     $.ajax({
       type: "POST",
-      url: "/",
+      url: "/verify_phone_otp",
       data: {
         mobile: $("#mobile_register").val(),
         otp: $("#otp").val()
       },
-      success: function () {
+      success: function (result) {
+        alert(result);
+        if(result.status=="success"){
+                if(localStorage.getItem("mode") != null)
+                   location.href="/" + localStorage.getItem("mode");
 
-        if(localStorage.getItem("mode") != null)
-            location.href="/" + localStorage.getItem("mode");
-      }
+        } else{
+          alert(result.msg)
+        }
+
+
     });
 }

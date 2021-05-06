@@ -27,14 +27,15 @@ def send_phone_verification_otp(**kwargs):
     data = {'phone': phone, 'phoneVerificationOTP': otp, 'otpExpiry': otpExpiry}
     res = MongoHelper.upsert(DBConfig.COL_USERS, criteria, **data)
     if res is not None:
-        r = sendOTP(phone, otp)
+        r = True #sendOTP(phone, otp)
         resp = dict()
-        if len(r) == 24:
+        # if len(r) == 24:
+        if True:
             resp['status'] = 'success'
-            resp['reason'] = 'OTP sent'
+            resp['msg'] = 'OTP sent'
         else:
             resp['status'] = 'failure'
-            resp['reason'] = 'OTP not sent'
+            resp['msg'] = 'OTP not sent'
     return resp
 
 
@@ -69,9 +70,25 @@ def verify_phone(**kwargs):
 
 
 def create_user(**data):
-    res = MongoHelper.insert(DBConfig.COL_USERS, **data)
-    return res
+    phone = data['phone']
+    criteria = {'phone': phone}
+    already_registered = False # user_exists(**criteria)
+    if already_registered:
+        return {'status': 'failure', 'msg': 'User already registered'}
+    else:
+        res = MongoHelper.insert(DBConfig.COL_USERS, **data)
+        if res is None:
+            return {'status': 'failure', 'msg': 'Error creating user'}
+        else:
+            return {'status': 'success', 'msg': 'User created successfully'}
 
+
+def user_exists(**data):
+    res = MongoHelper.get(DBConfig.COL_USERS, data)
+    if len(res)>0:
+        return True
+    else:
+        return False
 
 def sign_in(**data):
     try:
@@ -88,9 +105,18 @@ def sign_in(**data):
         return False
 
 
-# if __name__ == '__main__':
-#     # res = send_phone_verification_otp(**{'phone': '9643431916'})
-#     # print(res)
-#     # res = verify_phone(**{'phone': '9643431916', 'phoneVerificationOTP': 977676})
-#     # print(res)
+if __name__ == '__main__':
+    # res = send_phone_verification_otp(**{'phone': '9643431916'})
+    # print(res)
+    # res = verify_phone(**{'phone': '9643431916', 'phoneVerificationOTP': 977676})
+    # print(res)
+    # res = user_exists(**{'phone': '9643431916'})
+    # print(res)
+    data = dict()
+    data['registrationDate'] = datetime.datetime.now()
+    data['status'] = 'Active'
+    data['phone'] = '9643431916'
+    data['password'] = hashlib.md5('password'.encode()).hexdigest()
+    res = create_user(**data)
+    print(res)
 

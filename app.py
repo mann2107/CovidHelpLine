@@ -68,15 +68,16 @@ def sign_up():
         data['phone'] = phone
         data['password'] = hashlib.md5(password.encode()).hexdigest()
         res = Users.create_user(**data)
-        if res is not None:
-            logging.info('New user registered with phone '+ phone)
-            return render_template("account.html")  # , content_type='application/json')
+        if res['status'] == 'success':
+            logging.info('New user registered with phone ' + phone)
+            resp = Users.send_phone_verification_otp(**{'phone': phone})
+            return jsonify(resp)
         else:
             logging.error('Error registering user with phone ' + phone)
-            return render_template("account.html")
+            return jsonify(res)
     except Exception as e:
         logging.error('Error registering user with phone ' + phone)
-        return render_template("account.html")
+        return jsonify({'status': 'failure', 'msg': 'Some Error'})
 
 
 '''
@@ -109,8 +110,8 @@ returns: {'status': 'success/failure', 'data': data, 'reason': reason }
 def verify_phone_otp():
     try:
         data = dict()
-        data['phoneVerificationOTP'] = request.form['o']
-        data['phone'] = int(request.form['ph'])
+        data['phoneVerificationOTP'] = request.form['otp']
+        data['phone'] = int(request.form['mobile'])
 
         d = Users.verify_phone(**data)
         return jsonify(d)
@@ -149,7 +150,7 @@ def volunteerprofile():
 
 @app.route('/requirement-profile')
 def requirementprofile():
-    return render_template("requirement-profile.html")
+    return render_template("patient-profile.html")
 
 
 @app.route('/requirement')
@@ -159,7 +160,7 @@ def requirement():
 
 @app.route('/requirement-form')
 def requirementform():
-    return render_template("patient-form.html")
+    return render_template("requirement-form.html")
 
 
 if __name__ == "__main__":

@@ -23,7 +23,6 @@ function getMyRequirements()
         }
         )
 
-
         $("#tblMyRequirement").html(str)
 
       }
