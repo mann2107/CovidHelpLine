@@ -37,6 +37,20 @@ def list_global_requirements():
     return jsonify(data)
 
 
+
+@app.route("/listuserhelps", methods=['GET'])
+def list_user_helps():
+    data = model.list_user_helps()
+    return jsonify(data)
+
+
+
+@app.route("/listpatientrequirements", methods=['GET'])
+def list_patient_requirements():
+    data = model.list_patient_requirements()
+    return jsonify(data)
+
+
 # @app.route("/listrequirements", methods=['GET'])
 # def list_requirements():
 #     data = model.list_requirements()
@@ -56,12 +70,14 @@ def create_account():
 
 @app.route("/create_requirement", methods=['POST'])
 def create_requirement():
+    
     data = request.form
+    print(data)
     res = model.create_requirement(**data)
     if res:
-        return "success"
+        return jsonify({'status': 'success', 'msg': 'requirement created', 'data': {}})
     else:
-        return "failure"
+        return jsonify({'status': 'failure', 'msg': 'failed', 'data': {}})
 
 
 '''##############################Login and Sign up####################################################################'''

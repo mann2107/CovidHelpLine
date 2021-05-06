@@ -5,13 +5,13 @@ function getGlobalRequirements()
       type: "GET",
       url: "/listglobalrequirements",
       success: function (result) {
-        alert(result)
-        result = result.replace(/'/g, '"');
+
+        //result = result.replace(/'/g, '"');
         console.log(result);
-        console.log(JSON.parse(result))
+
         var str = "<tr class='bg-primary text-white '><td>Location</td><td>Patient Id</td><td>Posted</td><td>Requirement</td><td>Status</td><td>Pick</td></tr>"
 
-        $.each(JSON.parse(result), function(index, obj){
+        $.each(result, function(index, obj){
         str+="<tr><td>"+obj.location+
         "</td><td>"+obj.patient_id+
         "</td><td>"+obj.posted+
@@ -34,21 +34,34 @@ function getMyHelps()
 
     $.ajax({
       type: "GET",
-      url: "/",
+      url: "/listuserhelps",
       success: function (result) {
 
-        result = "[{'requirement_summary': 'Oxygen, 1',  'picked_at': '', 'status': 'Open', 'picked_by': ''},{'requirement_summary': 'Covid Bed, 2', 'picked_at': '', 'status': 'Open', 'picked_by': ''}]"
-        result = result.replace(/'/g, '"');
+        //result = "[{'requirement_summary': 'Oxygen, 1',  'picked_at': '', 'status': 'Open', 'picked_by': ''},{'requirement_summary': 'Covid Bed, 2', 'picked_at': '', 'status': 'Open', 'picked_by': ''}]"
+        //result = result.replace(/'/g, '"');
         console.log(result);
-        console.log(JSON.parse(result))
-        var str = "<tr class='bg-primary text-white '><td>Picked At</td><td>Picked By</td><td>Requirement</td><td>Status</td></tr>"
+        //console.log(JSON.parse(result))
+        var str = "<tr class='bg-primary text-white '><td>Location</td><td>Patient Id</td><td>Posted</td><td>Requirement</td><td>Status</td></tr>"
 
-        $.each(JSON.parse(result), function(index, obj){
-            str+="<tr><td>"+obj.picked_at+
-        "</td><td>"+obj.picked_by+
+        $.each(result, function(index, obj){
+        str+="<tr><td>"+obj.location+
+        "</td><td>"+obj.patient_id+
+        "</td><td>"+obj.posted+
         "</td><td>"+obj.requirement_summary+
-        "</td><td>"+obj.status+
-        "</td></tr>"
+        "</td><td>";
+
+        $.each(obj.volunteers, function(i, vol){
+            str+=vol;
+
+            if(i<obj.volunteers.length-1)
+            {
+            str+=", ";
+            }
+        })
+
+
+
+        str += "</td></tr>";
 
         }
         )

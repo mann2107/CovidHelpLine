@@ -20,30 +20,56 @@
     <title>Patient Details</title>
 
     <script>
-$(function () {
-
-
-
-    $( "form" ).on( "submit", function(e) {
-alert("acklana")
-    var dataString = $(this).serialize();
+function submitData(){
+    //var dataString = $(this).serialize();
 
     // alert(dataString); return false;
+var reqArray =[]
+$.each($(".requirementForm"), function(index, obj){
 
+var type=$("input[name=requirement]", obj).val();
+var unit=$("input[name=units]", obj).val();
+
+reqArray.push({type: type, units:unit});
+
+});
+
+console.log(reqArray)
+
+    var dataString = {
+        name : $("input[name=name]").val(),
+        id_type : $("input[name=id_type]").val(),
+        id_no : $("input[name=id_no]").val(),
+        phone : $("input[name=phone]").val(),
+        age : $("input[name=age]").val(),
+        hospital : $("input[name=hospital]").val(),
+        state : $("input[name=state]").val(),
+        city : $("input[name=city]").val(),
+        location : $("input[name=location]").val(),
+        requirements: reqArray
+    }
  console.log(dataString)
+
+
     $.ajax({
       type: "POST",
-      url: "",
+      url: "/create_requirement",
       data: dataString,
-      success: function () {
-
+      success: function (result) {
+        console.log(result)
       }
     });
 
-    e.preventDefault();
-  });
-});
 
+  }
+
+
+function addMoreRequirement()
+{
+var requirementHTML = $(".requirementForm")[0].outerHTML;
+console.log(requirementHTML)
+$("#divRequirements").append(requirementHTML);
+}
 
 
     </script>
@@ -51,75 +77,91 @@ alert("acklana")
 <body>
 <div class="container-fluid">
     <div class="row" id="divLoginForm">
-        <div class="col-4"></div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-            <form id="form" class="mt-5 border p-3">
+        <div class="col-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+            <div id="form" class="mt-5 border p-3">
                 <div class="row">
                     <div class="col-12">
                         <h5 class="text-primary text-center">Requirement Details</h5>
                     </div>
 
-                    <div class="col-12 py-2">
-<!--                        <input type="text" class="form-control" name="requirement" title="Name" placeholder="What do you need?"/>-->
-                        <input list="requirement" name="requirement" class="form-control" id="browser" placeholder="What do you need?" />
-  <datalist id="requirement">
-    <option value="Ambulance">
-    <option value="Cooked Food">
-    <option value="Covid Beds">
-    <option value="Covid Beds with Oxygen">
-    <option value="Medicine">
-      <option value="Oxygen on Location">
-      <option value="Oxygen Cans">
-      <option value="Oxygen Concentrator">
-      <option value="Oxygen Cylinder">
-      <option value="Oxygen Refill">
-      <option value="Oxygen Service">
-      <option value="Plasma">
 
-  </datalist>
-                    </div>
-                    <div class="col-12 py-2">
-                        <input type="text" class="form-control" name="units" title="Name" placeholder="How much units you need?"/>
-                    </div>
-                    <div class="col-12 py-2">
+                    <div class="col-6 py-2">
                         <input type="text" class="form-control" name="name" title="Name" placeholder="Patient Name"/>
                     </div>
-                    <div class="col-12 py-2">
+                    <div class="col-6 py-2">
                         <input type="text" class="form-control" name="id_type" placeholder="Id Type"/>
                     </div>
 
-                    <div class="col-12 py-2 text-center">
+                    <div class="col-6 py-2 text-center">
                         <input type="text" class="form-control" name="id_no" placeholder="Id Number"/>
                     </div>
 
 
-                    <div class="col-12 py-2 text-center">
+                    <div class="col-6 py-2 text-center">
                         <input type="text" class="form-control" name="phone" placeholder="Mobile"/>
                     </div>
 
 
-                    <div class="col-12 py-2 text-center">
+                    <div class="col-6 py-2 text-center">
                         <input type="number" class="form-control" name="age" placeholder="Patient Age"/>
                     </div>
 
-                    <div class="col-12 py-2 text-center">
-                        <input type="number" class="form-control" name="hospital" placeholder="Hospital"/>
+                    <div class="col-6 py-2 text-center">
+                        <input type="text" class="form-control" name="hospital" placeholder="Hospital"/>
                     </div>
 
-                    <div class="col-12 py-2 text-center">
+                    <div class="col-6 py-2 text-center">
                         <input type="text" class="form-control" name="state" placeholder="State"/>
                     </div>
 
-                    <div class="col-12 py-2 text-center">
+                    <div class="col-6 py-2 text-center">
                         <input type="text" class="form-control" name="city" placeholder="City"/>
                     </div>
 
-                    <div class="col-12 py-2 text-center">
+                    <div class="col-6 py-2 text-center">
                         <input type="text" class="form-control" name="location" placeholder="Location"/>
                     </div>
 
+
+
+                    <div class="col-12" id="divRequirements">
+                        <hr>
+                        <div class="row requirementForm">
+                                                <div class="col-6 py-2">
+
+                        <input list="requirement" name="requirement" class="form-control"  placeholder="What do you need?" />
+                          <datalist id="requirement">
+                            <option value="Ambulance">
+                            <option value="Cooked Food">
+                            <option value="Covid Beds">
+                            <option value="Covid Beds with Oxygen">
+                            <option value="Medicine">
+                              <option value="Oxygen on Location">
+                              <option value="Oxygen Cans">
+                              <option value="Oxygen Concentrator">
+                              <option value="Oxygen Cylinder">
+                              <option value="Oxygen Refill">
+                              <option value="Oxygen Service">
+                              <option value="Plasma">
+
+                          </datalist>
+                    </div>
+                    <div class="col-6 py-2">
+                        <input type="text" class="form-control" name="units" title="Name" placeholder="How much units you need?"/>
+                    </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 mt-3 text-center"><input type="button" onclick="addMoreRequirement()"  class="btn btn-success btn-sm px-3" value="Add More" />
+                    <hr>
+                    </div>
+
                     <div class="col-12 py-2 text-center">
-                        <input type="submit" class="btn btn-primary w-100" value="Submit"/>
+                        <input type="button" onclick="submitData()" class="btn btn-primary w-100" value="Submit"/>
                         <a class="btn btn-primary w-100 mt-3" href="/requirement">Go Back</a>
                     </div>
 
@@ -127,9 +169,9 @@ alert("acklana")
                 </div>
 
 
-            </form>
+            </div>
         </div>
-        <div class="col-4"></div>
+        <div class="col-2"></div>
     </div>
 </div>
 </body>
